@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage URL</title>
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
+  </head>
+  <body>
+    <form id="form" autocomplete="off">
+    	<img src="/icons/icon.png" />
+      <label for="url">Homepage URL</label>
+      <div class="row">
+        <input
+          type="text"
+          id="url"
+          placeholder="Enter a URL to replace new tab URL..."
+          required
+          autofocus
+        />
+        <button type="submit">Save</button>
+      </div>
+      <span id="msg"></span>
+    </form>
+    <style>
+      html {
+        padding: 10% 20%;
+        box-sizing: border-box;
+        font-size: 16px;
+        background: #000;
+        color: #fff;
+      }
+      label {
+        display: block;
+        width: 100%;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+      input[type="text"] {
+        display: block;
+      }
+      button {
+        border: none;
+        background: #333;
+        color: #fff;
+        margin-left: 1rem;
+      }
+      input,
+      button {
+        padding: 0.5rem 0.75rem;
+        font-size: 1rem;
+        border-radius: none;
+      }
+      span {
+        font-size: 1rem;
+      }
+      #msg {
+        color: #63ff63;
+      }
+      .row {
+        display: flex;
+      }
+      .row input {
+        flex-grow: 1;
+      }
+
+      form > *{
+      	margin-bottom:  1rem;
+      }
+
+      img{
+      	margin: auto;
+      	display: block;
+      	width:  80px;
+      }
+    </style>
+    <script src="index.js"></script>
+  </body>
+</html>
